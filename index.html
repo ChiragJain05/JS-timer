@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="glow-container">
+    <div class="ball"></div>
+    <div class="ball" style="--delay:-12s;--size:0.35;--speed:25s;"></div>
+    <div class="ball" style="--delay:-10s;--size:0.3;--speed:15s;"></div>
+  </div>
+
+  <div class="holder">
+    <div id="tenmillions" class="reel">
+      <div>9</div>
+      <div>8</div>
+      <div>7</div>
+      <div>6</div>
+      <div>5</div>
+      <div>4</div>
+      <div>3</div>
+      <div>2</div>
+      <div>1</div>
+      <div>0</div>
+    </div>
+    <div id="millions" class="reel">
+      <div>9</div>
+      <div>8</div>
+      <div>7</div>
+      <div>6</div>
+      <div>5</div>
+      <div>4</div>
+      <div>3</div>
+      <div>2</div>
+      <div>1</div>
+      <div>0</div>
+    </div>
+    <div id="hundredthousands" class="reel">
+      <div>9</div>
+      <div>8</div>
+      <div>7</div>
+      <div>6</div>
+      <div>5</div>
+      <div>4</div>
+      <div>3</div>
+      <div>2</div>
+      <div>1</div>
+      <div>0</div>
+    </div>
+    <div id="tenthousands" class="reel">
+      <div>9</div>
+      <div>8</div>
+      <div>7</div>
+      <div>6</div>
+      <div>5</div>
+      <div>4</div>
+      <div>3</div>
+      <div>2</div>
+      <div>1</div>
+      <div>0</div>
+    </div>
+    <div id="thousands" class="reel">
+      <div>9</div>
+      <div>8</div>
+      <div>7</div>
+      <div>6</div>
+      <div>5</div>
+      <div>4</div>
+      <div>3</div>
+      <div>2</div>
+      <div>1</div>
+      <div>0</div>
+    </div>
+    <div id="hundreds" class="reel">
+      <div>9</div>
+      <div>8</div>
+      <div>7</div>
+      <div>6</div>
+      <div>5</div>
+      <div>4</div>
+      <div>3</div>
+      <div>2</div>
+      <div>1</div>
+      <div>0</div>
+    </div>
+    <div id="tens" class="reel">
+      <div>9</div>
+      <div>8</div>
+      <div>7</div>
+      <div>6</div>
+      <div>5</div>
+      <div>4</div>
+      <div>3</div>
+      <div>2</div>
+      <div>1</div>
+      <div>0</div>
+    </div>
+    <div id="ones" class="reel">
+      <div>9</div>
+      <div>8</div>
+      <div>7</div>
+      <div>6</div>
+      <div>5</div>
+      <div>4</div>
+      <div>3</div>
+      <div>2</div>
+      <div>1</div>
+      <div>0</div>
+    </div>
+  </div>
+
+
+  <script>
+    var date1 = new Date(); // current date
+var date2 = new Date("02/27/2024"); // mm/dd/yyyy format
+var timeDiff = Math.abs(date2.getTime() - date1.getTime()); // in miliseconds
+var timeDiffInSecond = Math.ceil(timeDiff / 1000); // in second
+
+//alert(timeDiffInSecond);
+var str = timeDiffInSecond.toString();
+for (var i = 0; i < str.length; ++i) {
+	var chr = str.charAt(i);
+	console.log(chr);
+}
+//$("#millions div").css("transform", "rotateX(-136deg)");
+
+  </script>
+</body>
+</html>
